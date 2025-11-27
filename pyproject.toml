@@ -1,7 +1,22 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "easyDB"
-version = "0.0.1"
+version = "0.1.0"
+description = "Un module Python simple pour gérer une base de données JSON locale"
+readme = "README.md"
+requires-python = ">=3.6"
+authors = [
+    {name = "Antoine BLAISE", email = "antoine.blaise34@gmail.com"},
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
 
-[build-system]
-requires = ["setuptools"]
-build-backend = "setuptools.build_meta"
+[project.urls]
+"Homepage" = "https://github.com/toinoublz/easyDB"
+"Bug Tracker" = "https://github.com/toinoublz/easyDB/issues"
