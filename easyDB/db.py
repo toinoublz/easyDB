@@ -11,7 +11,7 @@ def get_caller_path():
 
     Example: If the caller is in file `src/main.py`, this function will return `Path("src")`.
     """
-    frame = inspect.stack()[2]
+    frame = inspect.stack()[-1]
     module = inspect.getmodule(frame[0])
     return Path(module.__file__).joinpath("..")
 
