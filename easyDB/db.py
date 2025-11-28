@@ -13,7 +13,7 @@ def get_caller_path():
     """
     frame = inspect.stack()[-1]
     module = inspect.getmodule(frame[0])
-    return Path(module.__file__).joinpath("..")
+    return Path(module.__file__).parent
 
 class DB:
     def __init__(self, name, verbose=True, indent=False):
